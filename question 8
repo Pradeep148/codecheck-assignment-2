@@ -1,0 +1,13 @@
+x = int(input("Enter 1st number : "))
+y = int(input("Enter 2nd number : "))
+z = int(input("Enter 3rd number : "))
+if (x%2!=0 and y%2!=0 and z%2!=0) :
+ print("All the entered numbers are odd\nTheir sum is " , (x+y+z))
+elif (x%2!=0 and y%2!=0 and z%2==0) :
+ print("1st and 2nd numbers are odd\nTheir sum is " , (x+y))
+elif (x%2!=0 and y%2==0 and z%2!=0) :
+ print("1st and 3rd numbers are odd\nTheir sum is " , (x+z))
+elif (x%2==0 and y%2!=0 and z%2!=0) :
+ print("2nd and 3rd numbers are odd\nTheir sum is " , (y+z))
+else :
+    print("All the given numbers are even")

@@ -1,0 +1,14 @@
+s1 = str(input("Enter 1st string : "))
+s2 = str(input("Enter 2nd string : "))
+s3 = str(input("Enter 3rd string : "))
+l1 = len(s1)
+l2 = len(s2)
+l3 = len(s3)
+if (l1<l2 and (l2<l3 or l3<l2) and (l1 < l3)) or (l2 == l3 and l1 < l2) :
+    print(s2+"\n"+s3)
+elif (l2<l3 and (l3<l1 or l1<l3) and l2 < l1) or (l1 == l3 and l2 < l1):
+    print(s1+"\n"+s3)
+elif (l3<l1 and (l1<l2 or l2<l1) and l3 < l2) or (l1 == l2 and l3 < l1) :
+    print(s1+"\n"+s2)
+else :
+    print("Length of all given strings is equal")
